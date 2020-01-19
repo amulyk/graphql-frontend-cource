@@ -8,7 +8,7 @@ import { useForm } from '../useForm';
 // Mutations
 const mutationCreateAccount = loader('./gql/mutationCreateAccount.graphql');
 
-export const useCustomer = () => {
+export const useCustomerCreator = () => {
   const [addUser, { data }] = useMutation(mutationCreateAccount);
   const {form, handleChange} = useForm({
     name: '',
