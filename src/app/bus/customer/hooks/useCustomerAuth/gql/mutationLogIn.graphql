@@ -1,0 +1,8 @@
+mutation logInd($username: ID!, $password: String!) {
+    logIn(username: $username, password: $password) {
+        token,
+        customer {
+            name
+        }
+    }
+}
